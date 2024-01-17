@@ -7,6 +7,8 @@ import 'vinxi/client'
 import { createRouter } from './router'
 import { StartClient } from '@tanstack/react-router-server/client'
 
+console.log('hihihi client.tsx has loaded!!')
+
 render()
 
 function render(mod?: any) {
@@ -37,6 +39,8 @@ function render(mod?: any) {
     // Hot
     window.$root?.render(app)
   }
+
+  console.log("client.tsx's render() has been called!")
 }
 
 if (import.meta.hot) {
